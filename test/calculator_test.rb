@@ -15,6 +15,9 @@ class CalculatorTest < Minitest::Test
 
     def test_mul
         assert @calc.mul(0, 0) == 0, "mul(0, 0) failed"
+        assert @calc.mul(2, 8) == 16, "mul(2, 8) failed"
+        assert @calc.mul(3, 5) == 15, "mul(3, 5) failed"
+        assert @calc.mul(9, 10) == 90, "mul(9, 10) failed"
     end
 
     def test_div
