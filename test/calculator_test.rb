@@ -7,6 +7,9 @@ class CalculatorTest < Minitest::Test
 
     def test_add
         assert @calc.add(0, 0) == 0, "add(0, 0) failed"
+        assert @calc.add(10, 20) == 30, "add(10, 20) failed"
+        assert @calc.add(-10, 20) == 10, "add(-10, 20) failed"
+        assert @calc.add(10, -20) == -10, "add(10, -20) failed"
     end
 
     def test_sub
