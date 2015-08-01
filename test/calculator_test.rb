@@ -35,6 +35,13 @@ class CalculatorTest < Minitest::Test
         assert @calc.div(99, 33) == 3, "div(99, 33) failed"
     end
 
+    def test_sqr
+        assert @calc.sqr(2) == 4, "sqr(2) failed"
+        assert @calc.sqr(10) == 100, "sqr(10) failed"
+        assert @calc.sqr(6) == 36, "sqr(6) failed"
+        assert @calc.sqr(4) == 16, "sqr(4) failed"
+    end
+
     def test_that_it_has_a_version_number
       refute_nil ::Calculator::VERSION
     end

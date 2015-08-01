@@ -26,6 +26,7 @@ module Calculator
         def div(num1, num2)
             return calculator_div(num1, num2)
         end
+
         def sqr(num1)
             return calculator_sqr(num1)
         end
