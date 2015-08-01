@@ -29,6 +29,10 @@ class CalculatorTest < Minitest::Test
     def test_div
         assert @calc.div(4, 1) == 4, "div(4, 1) failed"
         assert @calc.div(6, 3) == 2, "div(6, 3) failed"
+        assert @calc.div(8, 2) == 4, "div(8, 2) failed"
+        assert @calc.div(18, 3) == 6, "div(18, 3) failed"
+        assert @calc.div(20, 4) == 5, "div(20, 4) failed"
+        assert @calc.div(99, 33) == 3, "div(99, 33) failed"
     end
 
     def test_that_it_has_a_version_number
