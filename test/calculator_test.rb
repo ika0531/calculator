@@ -27,6 +27,8 @@ class CalculatorTest < Minitest::Test
     end
 
     def test_div
+        assert @calc.div(4, 1) == 4, "div(4, 1) failed"
+        assert @calc.div(6, 3) == 2, "div(6, 3) failed"
         assert @calc.div(8, 2) == 4, "div(8, 2) failed"
         assert @calc.div(18, 3) == 6, "div(18, 3) failed"
         assert @calc.div(20, 4) == 5, "div(20, 4) failed"
