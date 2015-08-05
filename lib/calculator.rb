@@ -7,6 +7,7 @@ require "calculator_sub"
 require "calculator_mul"
 require "calculator_div"
 require "calculator_sqr"
+require "calculator_dbl"
 
 module Calculator
   # Your code goes here...
@@ -29,6 +30,10 @@ module Calculator
 
         def sqr(num1)
             return calculator_sqr(num1)
+        end
+        
+        def dbl(num1)
+            return calculator_dbl(num1)
         end
     end
 end

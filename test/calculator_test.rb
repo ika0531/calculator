@@ -41,6 +41,13 @@ class CalculatorTest < Minitest::Test
         assert @calc.sqr(6) == 36, "sqr(6) failed"
         assert @calc.sqr(4) == 16, "sqr(4) failed"
     end
+    
+    def test_dbl
+       assert @calc.dbl(2)==4,"dbl(2)failed"
+       assert @calc.dbl(3)==6,"dbl(3)failed"
+       assert @calc.dbl(4)==8,"dbl(4)failed"
+    end
+       
 
     def test_that_it_has_a_version_number
       refute_nil ::Calculator::VERSION
